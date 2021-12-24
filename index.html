@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <script src="https://kit.fontawesome.com/97078e6c91.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/weather-icons.css">
+    <link rel="stylesheet" href="styles/weather-icons.min.css">
+    <link rel="stylesheet" href="styles/weather-icons-wind.css">
+    <link rel="stylesheet" href="styles/weather-icons-wind.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>myPredictor</h1>
+    </header>
+
+    <main>
+        <div>
+            <label for="city-select">Selecione uma cidade: </label>
+
+            <select id="city-select" oninput="selectCity(this)">
+                <option disabled selected hidden></option>
+                <option value="455819">Brasília</option>
+                <option value="455823">Porto Alegre</option>
+                <option value="455825">Rio de Janeiro</option>
+                <option value="455827">São Paulo</option>
+            </select>
+        </div>
+
+        <div id="main-content">
+            <div id="current-day-section">
+                <div id="general-info">
+                    <h2 id="city-name">Brasília, DF</h2>
+                    <h4 id="day-and-time">segunda-feira, 17:50</h4>
+                </div>
+
+                <div id="weather-info">
+                    <div id="icon-and-temperature">
+                        <div class="icon">
+                            <i class="wi wi-day-sunny"></i>
+                        </div>
+                        <p class="temperature">27°C</p>
+                    </div>
+                    
+                    <div id="min-max">
+                        <p id="min">min: 15°C</p>
+                        <p id="max">max: 25°C</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="next-days-section">
+                <div class="next-day-wrapper">
+                    <h6>Seg</h6>
+                    <i class="wi wi-night-sleet"></i>
+                   <div class="next-day-min-max">
+                       <p class="nxd-min">min: 15°C<p>
+                       <p class="nxd-max">max: 35°C<p>
+                   </div>
+                </div>
+
+                <div class="next-day-wrapper">
+                    <h6>Ter</h6>
+                    <i class="wi wi-night-sleet"></i>
+                    <div class="next-day-min-max">
+                        <p class="nxd-min">min: 15°C<p>
+                        <p class="nxd-max">max: 35°C<p>
+                    </div>
+                </div>
+
+                <div class="next-day-wrapper">
+                    <h6>Qua</h6>
+                    <i class="wi wi-night-sleet"></i>
+                    <div class="next-day-min-max">
+                        <p class="nxd-min">min: 15°C<p>
+                        <p class="nxd-max">max: 35°C<p>
+                    </div>
+                </div>
+
+                <div class="next-day-wrapper">
+                    <h6>Qui</h6>
+                    <i class="wi wi-night-sleet"></i>
+                    <div class="next-day-min-max">
+                        <p class="nxd-min">min: 15°C<p>
+                        <p class="nxd-max">max: 35°C<p>
+                    </div>
+                </div>
+
+                <div class="next-day-wrapper">
+                    <h6>Sex</h6>
+                    <i class="wi wi-night-sleet"></i>
+                    <div class="next-day-min-max">
+                        <p class="nxd-min">min: 15°C<p>
+                        <p class="nxd-max">max: 35°C<p>
+                    </div>
+                </div>
+
+                <div class="next-day-wrapper">
+                    <h6>Sab</h6>
+                    <i class="wi wi-night-sleet"></i>
+                    <div class="next-day-min-max">
+                        <p class="nxd-min">min: 15°C<p>
+                        <p class="nxd-max">max: 35°C<p>
+                    </div>
+                </div>
+
+                <div class="next-day-wrapper">
+                    <h6>Dom</h6>
+                    <i class="wi wi-night-sleet"></i>
+                    <div class="next-day-min-max">
+                        <p class="nxd-min">min: 15°C<p>
+                        <p class="nxd-max">max: 35°C<p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
