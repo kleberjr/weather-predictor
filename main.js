@@ -44,7 +44,7 @@ function updateNextDaysSection(weatherData) {
 
 // Atualiza os dados conforme a cidade selecionada.
 function selectCity(select) {
-    const weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&woeid=${select.value}`);
+    const weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&woeid=${select.value}`);
 
     updateCurrentDaySection(weatherData);
     updateNextDaysSection(weatherData);
@@ -113,7 +113,7 @@ const icons = {
     'Serviço não disponível': 'wi wi-na'
 }
 
-const weatherData = getRequest('https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&user_ip=remote');
+const weatherData = getRequest('https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&user_ip=remote');
 const cityName = document.querySelector('#city-name');
 const dayAndTime = document.querySelector('#day-and-time');
 const icon = document.querySelector('.icon').firstElementChild;
