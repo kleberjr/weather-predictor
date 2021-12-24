@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: #fafafa;
+    
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+    background-color: #42CCC4;
+    
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    height: 100%;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    width: auto;
+    height: 500px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 25%);
+
+    background: linear-gradient(180deg, rgba(131,219,225,1) 28%, rgba(131,210,225,1) 44%, rgba(131,204,225,1) 53%, rgba(135,159,192,1) 89%);
+}
+
+
+
+/* ---- CURRENT DAY SECTION STYLES ---- */
+
+#current-day-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 15%);
+
+    background: linear-gradient(180deg, rgba(255,255,255,0.4) 45%, rgba(246,246,246,0.29772727272727273) 80%);
+}
+
+#current-day-section:hover, .next-day-wrapper:hover {
+    cursor: pointer;
+}
+
+
+#general-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.3em;
+}
+
+#general-info h4 {
+    font-weight: 100;
+}
+
+
+#weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+#icon-and-temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#min-max {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+#weather-info .icon {
+    font-size: 6rem;
+}
+
+#weather-info .temperature {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+
+/* ------ NEXT DAYS SECTION STYLES ------ */
+
+#next-days-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+    height: 153px;
+}
+
+.next-day-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    min-width: 100px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 15%);
+
+    font-size: 2rem;
+
+    background: linear-gradient(180deg, rgba(255,255,255,0.4) 45%, rgba(246,246,246,0.29772727272727273) 80%);
+}
+
+.next-day-wrapper div:last-child {
+    font-size: 0.9rem;
+    text-align: center;
+}
