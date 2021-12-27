@@ -44,7 +44,17 @@ function updateNextDaysSection(weatherData) {
 
 // Atualiza os dados conforme a cidade selecionada.
 function selectCity(select) {
-    const weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&woeid=${select.value}`);
+
+    let weatherData;
+
+    if (select.value != 'user_ip=remote') {
+        weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&woeid=${select.value}`);
+        console.log(weatherData);
+    } else {
+        weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&${select.value}`);
+
+        console.log(weatherData);
+    }
 
     updateCurrentDaySection(weatherData);
     updateNextDaysSection(weatherData);
