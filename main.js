@@ -48,10 +48,10 @@ function selectCity(select) {
     let weatherData;
 
     if (select.value != 'user_ip=remote') {
-        weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&woeid=${select.value}`);
+        weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&woeid=${select.value}`);
         console.log(weatherData);
     } else {
-        weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&${select.value}`);
+        weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&${select.value}`);
 
         console.log(weatherData);
     }
@@ -123,7 +123,7 @@ const icons = {
     'Serviço não disponível': 'wi wi-na'
 }
 
-const weatherData = getRequest('https://api.hgbrasil.com/weather?format=json-cors&key=34ff8b50&user_ip=remote');
+const weatherData = getRequest('https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&user_ip=remote');
 const cityName = document.querySelector('#city-name');
 const dayAndTime = document.querySelector('#day-and-time');
 const icon = document.querySelector('.icon').firstElementChild;
