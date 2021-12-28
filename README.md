@@ -9,4 +9,5 @@ Este é um projeto feito EXCLUSIVAMENTE por mim de forma ORIGINAL, sem qualquer 
 
 ## Visualize o projeto
 - A chave necessária para o uso exposto da API no Github Pages excedeu o limite de consultas, portanto, caso queira visualizar o projeto, baixe os arquivos e abra localmente. 
-<img align="center" alt="Kleber-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+<img align="center" alt="Kleber-React" width="80%" src="Previews/preview1.png">
+<img align="center" alt="Kleber-React" width="80%" src="Previews/preview2.png">
