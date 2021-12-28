@@ -49,11 +49,8 @@ function selectCity(select) {
 
     if (select.value != 'user_ip=remote') {
         weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&woeid=${select.value}`);
-        console.log(weatherData);
     } else {
         weatherData = getRequest(`https://api.hgbrasil.com/weather?format=json-cors&key=2406e491&${select.value}`);
-
-        console.log(weatherData);
     }
 
     updateCurrentDaySection(weatherData);
