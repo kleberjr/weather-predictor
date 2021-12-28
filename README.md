@@ -7,4 +7,5 @@ Este é um projeto feito EXCLUSIVAMENTE por mim de forma ORIGINAL, sem qualquer 
 - A aplicação não é responsiva, uma vez que o intuito do projeto era apenas praticar o consumo de API.
 - A API consumida pode ser encontrada em https://hgbrasil.com/status/weather
 
-Visualize em: https://kleberjr.github.io/weather-predictor/
+## Visualize o projeto
+- A chave necessária para o uso exposto da API no Github Pages excedeu o limite de consultas, portanto, caso queira visualizar o projeto, baixe os arquivos e abra localmente. 
