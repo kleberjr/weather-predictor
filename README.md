@@ -1,5 +1,5 @@
 # Previsão do Clima
-Este é um projeto feito EXCLUSIVAMENTE por mim de forma ORIGINAL, sem qualquer cópia de código de terceiros ou tutorial seguido.
+Este é um projeto próprio.
 
 > Utilza HTML5, CSS3 e JavaScript para implementar uma aplicação de previsão do clima, através do consumo de uma API. 
 
